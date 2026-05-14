@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartBudget — Програма для контролю фінансів</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background-color: #f8fafc;
+      color: #334155;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .main-content {
+      max-width: 850px;
+      margin: auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: #e0e7ff;
+      color: #4338ca;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .main-title {
+      font-size: 48px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-top: 24px;
+      letter-spacing: -1px;
+    }
+
+    .main-description {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #64748b;
+      max-width: 550px;
+      margin: 16px auto 0 auto;
+    }
+
+    .download-container {
+      margin-top: 40px;
+    }
+
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background-color: #10b981;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.2);
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+    }
+
+    .download-btn:hover {
+      background-color: #059669;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3);
+    }
+
+    .icon {
+      width: 22px;
+      height: 22px;
+    }
+
+    .file-info {
+      font-size: 13px;
+      color: #94a3b8;
+      margin-top: 12px;
+    }
+
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 64px;
+      text-align: left;
+    }
+
+    .feature-card {
+      background-color: #ffffff;
+      padding: 24px;
+      border-radius: 16px;
+      border: 1px solid #f1f5f9;
+    }
+
+    .card-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    .icon-blue { background-color: #b8dcfd; }
+    .icon-green { background-color: #b8ffe1; }
+    .icon-amber { background-color: #fff7c8; }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+
+    .card-text {
+      font-size: 13px;
+      line-height: 1.5;
+      color: #64748b;
+    }
+
+    .footer {
+      background-color: #ffffff;
+      border-top: 1px solid #f1f5f9;
+      padding: 24px;
+      font-size: 13px;
+      color: #94a3b8;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<main class="main-content">
+  <span class="badge">Офіційний реліз v1.0</span>
+
+  <h1 class="main-title">SmartBudget</h1>
+
+  <p class="main-description">
+    Простий та надійний софт для комп'ютера, який допоможе вам контролювати доходи, планувати витрати та назавжди забути про хаос у гаманці.
+  </p>
+
+
+  <div class="download-container">
+
+    <a href="SmartBudget.exe" download class="download-btn">
+      <svg class="icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+      </svg>
+      Завантажити для Windows (.exe)
+    </a>
+    <p class="file-info">Без вірусів, реєстрації та реклами • Розмір: 8.5 MB</p>
+  </div>
+
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="card-icon icon-blue">💰</div>
+      <h3 class="card-title">Захист від мінусу</h3>
+      <p class="card-text">Система автоматично перевіряє ваш поточний баланс і не дозволить внести витрату, на яку у вас немає коштів.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="card-icon icon-green">🔒</div>
+      <h3 class="card-title">Абсолютна приватність</h3>
+      <p class="card-text">Всі фінансові дані зберігаються виключно локально на вашому ПК у форматі JSON. Жодних хмар та інтернету.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="card-icon icon-amber">⚡</div>
+      <h3 class="card-title">Зручна історія</h3>
+      <p class="card-text">Миттєве додавання записів, автоматичне сортування за категоріями та можливість повністю очистити історію в один клік.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  &copy; 2026 SmartBudget App. Усі права захищено.
+</footer>
+
+</body>
+</html>
